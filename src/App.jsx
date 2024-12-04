@@ -10,9 +10,15 @@ function App() {
   let [ctg, setCtg] = useState('');
 
   let calcBMI = () => {
-    let bmiValue = parseFloat(weight) / Math.pow((parseFloat(height)/100),2);
-    setBMI(bmiValue);
-    calCategory(bmiValue);
+    if(!weight || !height) {
+      alert('please enter both height and weight');
+    } else if (isNaN(weight) || isNaN(height)) {
+      alert('please enter number values');
+    } else {
+      let bmiValue = parseFloat(weight) / Math.pow((parseFloat(height)/100),2);
+      setBMI(bmiValue);
+      calCategory(bmiValue);
+    }
   }
 
   let calCategory = (bmiValue) => {
