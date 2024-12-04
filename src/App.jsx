@@ -18,6 +18,9 @@ function App() {
       let bmiValue = parseFloat(weight) / Math.pow((parseFloat(height)/100),2);
       setBMI(bmiValue.toFixed(2));
       calCategory(bmiValue);
+
+      setHeight('');
+      setWeight('');
     }
   }
 
@@ -46,9 +49,9 @@ function App() {
         <h2>check your BMI</h2>
         <div className="bmi-form">
 
-          <input type="text" placeholder='enter weight in kg' onChange={(e) => setWeight(e.target.value) }/>
+          <input type="text" placeholder='enter weight in kg' value={weight} onChange={(e) => setWeight(e.target.value) }/>
 
-          <input type="text" placeholder='enter height in cm' onChange={(e) => setHeight(e.target.value) } />
+          <input type="text" placeholder='enter height in cm' value={height} onChange={(e) => setHeight(e.target.value) } />
 
           <button onClick={calcBMI}>Submit</button>
 
