@@ -27,9 +27,9 @@ function App() {
 
     if(bmiValue < 18.5) {
       setCtg('underweight');
-    } else if ( bmiValue > 18.5 && bmiValue < 25) {
+    } else if ( bmiValue >= 18.5 && bmiValue < 25) {
       setCtg('normalweight');
-    } else if ( bmiValue > 25 && bmiValue < 30 ) {
+    } else if ( bmiValue >= 25 && bmiValue < 30 ) {
       setCtg('overweight');
     } else {
       // console.log('obese', bmiValue);
