@@ -16,7 +16,7 @@ function App() {
       alert('please enter number values');
     } else {
       let bmiValue = parseFloat(weight) / Math.pow((parseFloat(height)/100),2);
-      setBMI(bmiValue);
+      setBMI(bmiValue.toFixed(2));
       calCategory(bmiValue);
     }
   }
