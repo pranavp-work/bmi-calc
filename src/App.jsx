@@ -49,7 +49,9 @@ function App() {
         </div>
 
         <h2>{bmi}</h2>
-        <h1>Congrats you are {ctg}</h1>
+        {
+          ctg && <h1>Congrats you are {ctg}</h1>
+        }  
      </div>
     </>
   )
