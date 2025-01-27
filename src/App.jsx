@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      <div className="App p-5 d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '100%', background: '#28282B', color: 'white' }}>
+      <div className="App p-5 d-flex justify-content-center align-items-center" style={{ minHeight: '100vh', width: '100%', background: '#28282B', color: 'white' }}>
         <div className="row container">
           <div className="col-md-6 col-12 d-flex flex-column align-items-between">
             {/* <h2 className='text-center'>BMI</h2> */}
