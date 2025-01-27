@@ -72,16 +72,16 @@ function App() {
             <div>
 
                 {/* normal weight */}
-                {ctg == 'normalweight' && (<img src={sigmaOne} alt="" style={{ height: '50%', width: '100%' }} />)}
+                {ctg == 'normalweight' && (<img src={sigmaOne} alt="" style={{ height: '100%', width: '100%' }} />)}
 
                 {/* underweight */}
-                {ctg == 'underweight' && (<img src={skinnyOne} alt="" style={{ height: '50%', width: '100%' }} />)}
+                {ctg == 'underweight' && (<img src={skinnyOne} alt="" style={{ height: '100%', width: '100%' }} />)}
 
                 {/* overweight */}
-                {ctg == 'overweight' && (<img src={averageOne} alt="" style={{ height: '50%', width: '100%' }} />)}
+                {ctg == 'overweight' && (<img src={averageOne} alt="" style={{ height: '100%', width: '100%' }} />)}
 
                 {/* obese */}
-                {ctg == 'obese' && (<img src={obeseOne} alt="" style={{ height: '50%', width: '100%' }} />)}
+                {ctg == 'obese' && (<img src={obeseOne} alt="" style={{ height: '100%', width: '100%' }} />)}
 
             </div>
           </div>
