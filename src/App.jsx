@@ -51,9 +51,9 @@ function App() {
     <>
       <div className="App p-5 d-flex justify-content-center align-items-center" style={{ minHeight: '100vh', width: '100%', background: '#28282B', color: 'white' }}>
         <div className="row container">
-          <div className="col-md-6 col-12 d-flex flex-column align-items-between">
+          <div className="col-md-6 col-12 d-flex flex-column align-items-between justify-content-center">
             {/* <h2 className='text-center'>BMI</h2> */}
-            <div className="bmi-form d-flex flex-column align-items-center" style={{marginTop: '200px'}}>
+            <div className="bmi-form d-flex flex-column align-items-center" style={{marginTop: '0px'}}>
               <input type="text" placeholder='enter weight in kg' className='w-50 rounded-4 mt-2 px-2 py-1' value={weight} onChange={(e) => setWeight(e.target.value)} />
               <input type="text" placeholder='enter height in cm' className='w-50 rounded-4 mt-2 px-2 py-1' value={height} onChange={(e) => setHeight(e.target.value)} />
 
