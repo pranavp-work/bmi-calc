@@ -45,16 +45,17 @@ function App() {
 
   return (
     <>
-      <div className="App p-5" style={{ height: '100vh', width: '100%', background: '#28282B', color: 'white'}}>
+      <div className="App p-5 d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '100%', background: '#28282B', color: 'white'}}>
         <div className="row container">
           <div className="col-md-6">
-            <h2 className='text-center'>your BMI</h2>
+            {/* <h2 className='text-center'>BMI</h2> */}
             <div className="bmi-form d-flex flex-column align-items-center">
-              <input type="text" placeholder='enter weight in kg' className='w-25 rounded-4 mt-2' value={weight} onChange={(e) => setWeight(e.target.value)} />
-              <input type="text" placeholder='enter height in cm' className='w-25 rounded-4 mt-2' value={height} onChange={(e) => setHeight(e.target.value)} />
-              <button onClick={calcBMI} className='btn w-25 rounded-4 mt-2' style={{background: 'white', color: 'black'}}>Submit</button>
+              <input type="text" placeholder='enter weight in kg' className='w-25 rounded-4 mt-2 px-2 py-1' value={weight} onChange={(e) => setWeight(e.target.value)} />
+              <input type="text" placeholder='enter height in cm' className='w-25 rounded-4 mt-2 px-2 py-1' value={height} onChange={(e) => setHeight(e.target.value)} />
+              
+              <button onClick={calcBMI} className='btn w-25 rounded-4 mt-2' style={{background: 'red', color: 'white'}}>Submit</button>
             </div>
-            <div className='d-flex align-items-center flex-column'>
+            <div className='d-flex align-items-center flex-column mt-5'>
               <h2>{bmi}</h2>
               {
                 ctg && <h1>Congrats you are {ctg}</h1>
@@ -62,7 +63,9 @@ function App() {
             </div>
             
           </div>
-          <div className="col-md-6"></div>
+          <div className="col-md-6">
+            
+          </div>
         </div>
       </div>
     </>
