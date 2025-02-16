@@ -110,7 +110,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 10px;
-    color: #f8b200;
+    color: #666666;
     margin-top: 3px;
   }
   
@@ -134,7 +134,7 @@
     user-select: none; */
 
     font-size: 20px;
-    color: rgb(100, 100, 100);
+    color: rgb(255, 208, 0);
     cursor: pointer;
     user-select: none;
   }
