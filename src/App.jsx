@@ -59,7 +59,7 @@ function App() {
 
   const loadSong = (index) => {
     setSongIndex(index);
-    setIsPlaying(false);
+    setIsPlaying(true);
     audioRef.current.src = songs[index].src;
     // audioRef.current.src = `/assets/music/${songs[index].name}.mp3`;
     if (audioRef.current) {
