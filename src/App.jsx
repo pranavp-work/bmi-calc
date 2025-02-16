@@ -59,15 +59,15 @@ function App() {
 
   const loadSong = (index) => {
     setSongIndex(index);
-    setIsPlaying(true);
+    setIsPlaying(false);
     audioRef.current.src = songs[index].src;
     // audioRef.current.src = `/assets/music/${songs[index].name}.mp3`;
     if (audioRef.current) {
       let songSrc;
-      if (ctg === "normalweight") songSrc = song1;
-      else if (ctg === "underweight") songSrc = song2;
-      else if (ctg === "overweight") songSrc = song1;
-      else if (ctg === "obese") songSrc = song2;
+      if (ctg === "normalweight") {songSrc = song1; setIsPlaying(true);}
+      else if (ctg === "underweight") {songSrc = song2; setIsPlaying(true);}
+      else if (ctg === "overweight") {songSrc = song1; setIsPlaying(true);}
+      else if (ctg === "obese") {songSrc = song2; setIsPlaying(true);}
       
       if (songSrc) {
         audioRef.current.src = songSrc;
