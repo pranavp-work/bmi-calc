@@ -95,7 +95,7 @@
     /* width: 0%;
     transition: width 0.1s linear; */
 
-    background: #242323;
+    background: #d10000;
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
@@ -134,7 +134,7 @@
     user-select: none; */
 
     font-size: 20px;
-    color: rgb(255, 208, 0);
+    color: rgb(100, 100, 100);
     cursor: pointer;
     user-select: none;
   }
